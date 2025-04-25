@@ -28,8 +28,8 @@ To run the bot, you'll need to have Python installed and create a virtual enviro
    Clone the repository (or simply copy the Python script to your local machine).
 
    ```bash
-   git clone https://github.com/your-username/ex-ai-chatbot.git
-   cd ex-ai-chatbot
+   git clone https://github.com/Ruchitha39/ex-bot.git
+   cd ex-bot
    ```
 
 2. **Install the required dependencies:**
