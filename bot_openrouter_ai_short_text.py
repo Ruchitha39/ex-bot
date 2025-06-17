@@ -9,7 +9,7 @@ intents.message_content = True
 client = discord.Client(intents=intents)
 
 # --- OpenRouter API Setup ---
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "enter your api key"
 MODEL = "nvidia/llama-3.1-nemotron-nano-8b-v1:free"
 
 def query_openrouter(user_message):
@@ -35,16 +35,16 @@ def query_openrouter(user_message):
             ai_reply = response.json()['choices'][0]['message']['content']
             return ai_reply
         else:
-            return f"⚠️ API Error: {response.status_code} - {response.text}"
+            return f"⚠ API Error: {response.status_code} - {response.text}"
 
     except Exception as e:
-        return f"❌ Exception occurred: {str(e)}"
+        return f" Exception occurred: {str(e)}"
 
 # --- Discord Events ---
 
 @client.event
 async def on_ready():
-    print(f'🤖 Logged in as {client.user}')
+    print(f' Logged in as {client.user}')
 
 @client.event
 async def on_message(message):
@@ -67,4 +67,4 @@ async def on_message(message):
         await message.channel.send(f"```markdown\n{reply}\n```")
 
 # --- Run Your Bot ---
-client.run("MTM2NTI2NzUyMDA2NzQ2OTMxNA.Gv3Hgm.o7z-o7EQYbm3ZxLdCTcOYaiYt5a_PFL-WmoUBA")
+client.run("enter your bot api key")
