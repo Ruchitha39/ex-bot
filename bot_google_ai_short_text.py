@@ -12,7 +12,7 @@ client = discord.Client(intents=intents)
 def generate(user_input: str):
     # Provide the API key directly
     client = genai.Client(
-        api_key="AIzaSyB4Bs-qPtUyAqu4sOg_XYYNCvhj5TKXP6M",  # Replace with your API Key directly here
+        api_key=" # Replace with your API Key directly here", 
     )
 
     model = "gemini-2.5-flash-preview-04-17"
@@ -51,7 +51,7 @@ def generate(user_input: str):
 # --- Discord Bot Events ---
 @client.event
 async def on_ready():
-    print(f"✅ Bot logged in as {client.user}")
+    print(f" Bot logged in as {client.user}")
 
 
 @client.event
@@ -65,10 +65,10 @@ async def on_message(message):
         user_input = message.content.replace(f"<@{client.user.id}>", "").replace("!ask", "").strip()
 
         if not user_input:
-            await message.channel.send("📩 Please enter a question.")
+            await message.channel.send(" Please enter a question.")
             return
 
-        await message.channel.send("💡 Thinking...")
+        await message.channel.send(" Thinking...")
 
         # Generate the response
         response = generate(user_input)
@@ -78,4 +78,4 @@ async def on_message(message):
 
 
 # --- Run the bot ---
-client.run("MTM2NTI2NzUyMDA2NzQ2OTMxNA.Gv3Hgm.o7z-o7EQYbm3ZxLdCTcOYaiYt5a_PFL-WmoUBA")  # Replace with your Discord bot token
+client.run(" # Replace with your Discord bot token") 
