@@ -98,4 +98,4 @@ async def on_message(message):
 
 
 # --- Run the bot ---
-client.run("MTM2NTI2NzUyMDA2NzQ2OTMxNA.Gv3Hgm.o7z-o7EQYbm3ZxLdCTcOYaiYt5a_PFL-WmoUBA")  # Replace with your Discord bot token
+client.run(" # Replace with your Discord bot token") 
