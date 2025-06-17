@@ -12,7 +12,7 @@ client = discord.Client(intents=intents)
 def generate(user_input: str):
     # Provide the API key directly
     client = genai.Client(
-        api_key="AIzaSyB4Bs-qPtUyAqu4sOg_XYYNCvhj5TKXP6M",  # Replace with your API Key directly here
+        api_key="# Replace with your API Key directly here",  
     )
 
     model = "gemini-2.5-flash-preview-04-17"
