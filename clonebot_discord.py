@@ -20,4 +20,4 @@ async def on_message(message):
     await message.channel.send(message.content)
 
 # Insert your bot token below
-client.run('MTM2NTI2NzUyMDA2NzQ2OTMxNA.Gv3Hgm.o7z-o7EQYbm3ZxLdCTcOYaiYt5a_PFL-WmoUBA')
+client.run('enter your bot api')
